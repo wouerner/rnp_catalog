@@ -2,39 +2,31 @@
 /**
  *  * Implements hook_block_info().
  *   */
-function teste_block_info() {
-  $blocks['teste'] = array(
+function rnp_catalog_block_info() {
+  $blocks['rnp_catalog'] = array(
     // The name that will appear in the block list.
-    'info' => t('Teste'),
+    'info' => 'rnp_catalog',
     // Default setting.
     'cache' => DRUPAL_NO_CACHE,
   );
   return $blocks;
 }
 
-/* function teste_block_view($delta = '') { */
-/*   return  $block['content'] = '<strong>teste</strong>'; */
-/* } */
-
-/* function teste_block_view($delta = '') { */
-/*     return $block['content'] = array('<strong>teste</strong>'); */
-/* } */
-
-function teste_block_view() {
+function rnp_catalog_block_view() {
   $block = array();
-  $block['content'] = theme('teste-theme');
+  $block['content'] = theme('rnp_catalog-theme');
   return $block;
 }
 
-function teste_theme($existing, $type, $theme, $path) {
+function rnp_catalog_theme($existing, $type, $theme, $path) {
   return array(
-    'teste-theme' => array(
+    'rnp_catalog-theme' => array(
       'template' => 'html-page'
     ),
   );
 }
 
-function teste_menu() {
+function rnp_catalog_menu() {
   $items = array();
   $items['books'] = array(
     'title'             =>  'Books View',  //page title
@@ -45,11 +37,10 @@ function teste_menu() {
   return $items;
 }
 
-function teste_help($path, $arg) {
+function rnp_catalog_help($path, $arg) {
   switch ($path) {
-      case "admin/help#teste":
+      case "admin/help#rnp_catalog":
         return t("Displays links to nodes created on this date");
         break;
     }
 }
-

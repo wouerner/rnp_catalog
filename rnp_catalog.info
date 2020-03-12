@@ -5,6 +5,7 @@ dependencies[] = block
 
 ;scripts[] = dist/app.js
 ;scripts[] = dist/app.js.map
-stylesheets[all][] = dist/chunk-vendors.css
+;stylesheets[all][] = dist/chunk-vendors.css
+;stylesheets[all][] = dist/chunk-common.css
 ;scripts[] = dist/chunk-vendors.js
 ;scripts[] = dist/chunk-vendors.js.map
