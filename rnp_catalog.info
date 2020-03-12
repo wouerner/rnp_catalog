@@ -1,5 +1,5 @@
-name = Teste
-description = Teste VueJS
+name = Catalog
+description = RNP Catalog
 core = 7.x
 dependencies[] = block
 

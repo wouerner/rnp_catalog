@@ -4,17 +4,17 @@
 ?>
 <div id="app"></div>
 <?php
-drupal_add_js(drupal_get_path('module', 'teste') . '/dist/catalogo.js', array(
+drupal_add_js(drupal_get_path('module', 'rnp_catalog') . '/dist/catalogo.js', array(
   'type' => 'file',
   'scope' => 'footer'
 ));
 
-drupal_add_js(drupal_get_path('module', 'teste') . '/dist/chunk-vendors.js', array(
+drupal_add_js(drupal_get_path('module', 'rnp_catalog') . '/dist/chunk-vendors.js', array(
   'type' => 'file',
   'scope' => 'footer'
 ));
 
-drupal_add_js(drupal_get_path('module', 'teste') . '/dist/chunk-common.js', array(
+drupal_add_js(drupal_get_path('module', 'rnp_catalog') . '/dist/chunk-common.js', array(
   'type' => 'file',
   'scope' => 'footer'
 ));
