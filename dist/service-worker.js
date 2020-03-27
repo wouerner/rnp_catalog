@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.cc669b00b72cfa18ecacb40456d651f9.js"
+  "/precache-manifest.93dd74278fe26e76713c2e18e81af993.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "prototipo-rnp"});
