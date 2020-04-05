@@ -22,14 +22,18 @@ drupal_add_js(drupal_get_path('module', 'rnp_catalog') . '/dist/chunk-common.js'
 ));
 
 drupal_add_css(drupal_get_path('module', 'rnp_catalog') . '/dist/chunk-vendors.css',
-  array('type' => 'file',
-  'scope' => 'footer'
+  array(
+    'type' => 'file',
+    'scope' => 'footer',
+    'group' => CSS_THEME
   )
 );
 
 drupal_add_css(drupal_get_path('module', 'rnp_catalog') . '/dist/chunk-common.css',
-  array('type' => 'file',
-  'scope' => 'footer'
+  array(
+    'type' => 'file',
+    'scope' => 'footer',
+    'group' => CSS_THEME
   )
 );
 ?>
